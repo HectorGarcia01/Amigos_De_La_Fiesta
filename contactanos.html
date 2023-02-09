@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Contactanos</title>
+        <link rel="stylesheet" href="css/Contactanos.css">
+        <link rel="stylesheet" href="css/Logins.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/RegistroSesion.css">
+    </head>
+    <body>
+        <header class="hero headerCont" id="headerCont">
+            <div class="container">
+                <div class="menu">
+                    <nav>
+                        <ul class="lista">
+                            <li>
+                                <a href="index.html" onclick="visible1();">Inicio</a>
+                            </li>
+                            <!-- <li>
+                                <a href="#">Iniciar Sesion</a>
+                                <div class="sesiones">
+                                    <a href="#" id="btnLogC" onclick="AbrirCliente();">Cliente</a>
+                                    <a href="#" id="btnLogA" onclick="AbrirAbogado();">Abogado</a>
+                                </div>
+                            </li> -->
+
+                            <li id="contac">
+                                <a href="#" onclick="location.reload();">Contactanos</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <section class="hero__container">
+                    <div class="hero__texts">
+                        <h1 class="hero__title1">
+                            Contactanos
+                        </h1>
+                        <div class="centrar--sub">
+                            <h2 class="hero__subtitle">Notifcanos de algun error u opinión</h2>
+                        </div>
+                        <div class="centrar--b">
+                            <a href="#contenedor_contacto" class="hero__cta" onclick="visible_contacto();">Escribe ahora</a>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+            <div class="hero__wave" style="overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                    style="height: 100%; width: 100%;">
+                    <path d="M0.00,49.98 C150.00,150.00 351.74,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                        style="stroke: none; fill: #fff;"></path>
+                </svg></div>
+        </header>
+
+
+        <!--Para contactarnos-->
+        <div id="contenedor_contacto">
+            <form action="mailto:hg2779948@gmail.com" method="POST" enctype="text/plain" class="contendor_secundario" id="FORMULARIO">
+                <div class="correo">
+                    <section id="contiene_input">
+                        <label class="alto_original">
+                            <h3>Nombre *</h3>
+                            <input type="text" name="name" id="contact_name" placeholder="Ingrese su nombre" />
+                        </label>
+                        <label class="alto_original">
+                            <h3>Email *</h3>
+                            <input type="email" name="mail" id="contact_email" placeholder="Ingrese su correo electrónico" />
+                        </label>
+                        <label class="alto_original">
+                            <h3>Compañía/Organización</h3>
+                            <input type="text" name="organization" id="contact_organization" placeholder="Ingrese su Compañía u Organización" />
+                        </label>
+                        <label class="alto_mensaje">
+                            <h3>Mensaje *</h3>
+                                <textarea name="message" id="texta" cols="30" rows="10" ></textarea>
+                        </label>
+                    </section>
+                    <section id="contiene_contacto">
+                        <div class="iconos_redes">
+                            <a href="#"><img src="iconos/instagram.png" title="INSTAGRAM" /></a>
+                            <a href="https://www.twitter.com/AssesorC"><img src="iconos/twitter.png" title="TWITTER" /></a>
+                            <a href="#"><img src="iconos/facebook.png" title="FACEBOOK" /></a>
+                        </div>
+                        <div class="contiene_tecnico">
+                            <h2>Técnicos</h2>
+                            <a href="www.gmail.com" title="Ing. Hector Garcia">
+                                <a class="correo_tec decor">Ing. Hector García</a>
+                                <h4>hgarciag15@miumg.edu.gt</h4>
+                            </a>
+                            <h4 class="correo_tec">+502 47980664</h4>
+                            <a href="www.gmail.com" title="Ing. Damian Veliz">
+                                <a class="correo_tec decor">Ing. Damian Veliz</a>
+                                <h4>jvelizh1@miumg.edu.gt</h4>
+                            </a>
+                            <h4 class="correo_tec">+502 54873972</h4>
+                            <a href="www.gmail.com" title="Ing. Fernando Amado">
+                                <a class="correo_tec decor">Ing. Fernando Amado</a>
+                                <h4>fescobarp1@miumg.edu.gt</h4>
+                            </a>
+                            <h4 class="correo_tec">+502 47487661</h4>
+                            <a href="www.gmail.com" title="Ing. Josue Garcia">
+                                <a class="correo_tec decor">Ing. Josue García</a>
+                                <h4>lgarciav14@miumg.edu.gt</h4>
+                            </a>
+                            <h4 class="correo_tec">+502 30571670</h4>
+                            <a href="www.gmail.com" title="Ing. Jose Ixcoi">
+                                <a class="correo_tec decor">Ing. José Ixcoy</a>
+                                <h4>jixcoym1@miumg.edu.gt</h4>
+                            </a>
+                            <h4 class="correo_tec">+502 4398 2745</h4>
+                            <a href="www.gmail.com" title="Ing. Carlos Vela">
+                                <a class="correo_tec decor">Ing.  Carlos Vela</a>
+                                <h4>cvelal@miumg.edu.gt</h4>
+                            </a>
+                            <h4 class="correo_tec">+502 41029239</h4>
+                        </div>
+                    </section>
+                </div>
+                <button type="submit" class="btn-enviar" onclick="invisible_contacto();">Enviar</button>
+            </form>
+        </div>
+
+         
+        <!--Para los login-->
+        <!--Login cliente-->
+        <div id="ventanaLoginC">
+            <div id="cerrarLogin">
+                <a href="#" id="CerrarLoginC" onclick="cerrarVentanaC();">
+                    <img src="iconos/cerrar.png" title="Cerrar" />
+                </a>
+            </div>
+            <h1>LOGIN CLIENTE</h1>
+            <form id="LogClient">
+                <div class="contenedor_login" id="contenedor_loginC">
+                    <input type="text" id="UsuarioCliente" placeholder="Ingrese su Usuario" />
+                    <input type="password" id="ContraCliente" placeholder="Ingrese su Contraseña" />
+                    <a href="#" class="BtnIngresar" id="IngresarC" onclick="IngresarCliente();">Ingresar</a>
+                    <a href="#" class="BtnOlvido" id="OlvidoC">¿Olvidó su contraseña?</a>
+                    <a href="#" class="BtnRegistrar" id="RegistrarC" onclick="AbrirRegCliente();">REGISTRARSE</a>
+                </div> 
+            </form>
+        </div>
+
+        <!--Login abogado-->
+        <div id="ventanaLoginA">
+            <div id="cerrarLogin">
+                <a href="#" id="CerrarLoginA" onclick="cerrarVentanaA();">
+                    <img src="iconos/cerrar.png" title="Cerrar" />
+                </a>
+            </div>
+            <h1>LOGIN ABOGADO</h1>
+            <form id="LogAbog">
+                <div class="contenedor_login" id="contenedor_loginA">
+                    <input type="text" id="UsuarioAbogado" placeholder="Ingrese su Usuario" />
+                    <input type="password" id="ContraAbogado" placeholder="Ingrese su Contraseña" />
+                    <a href="#" class="BtnIngresar" id="IngresarA" onclick="IngresarAbogado();">Ingresar</a>
+                    <a href="#" class="BtnOlvido" id="OlvidoA">¿Olvidó su contraseña?</a>
+                    <a href="#" class="BtnRegistrar" id="RegistrarA" onclick="AbrirRegAbogado();">REGISTRARSE</a>
+                </div>
+            </form>
+        </div>
+
+        <!--Todos los Script-->
+          
+        <!--Script del formulario de registro-->
+        <script src="js/Formulario-Registro.js"></script>
+
+        <!--Script de contactanos-->
+        <script src="js/Contactanos.js"></script>
+
+        <!--Script de la validacion del login-->
+        <script src="js/Logins.js"></script>
+    </body>
+</html>

@@ -1,0 +1,210 @@
+
+/*Para desenfocar todo lo que este debajo del login en inicio*/
+.header_desenfocado{
+    height: 100vh;
+    background-image: var(--backgroung), url("../Recursos/toro\ login.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position:relative;
+    filter: blur(5px);
+}
+
+/*Para desenfocar todo lo que este debajo del login en contactanos*/
+.headerCont_desenfocado{
+    height: 100vh;
+    background-image: url("../Recursos/contacto-fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position:relative;
+    filter: blur(5px);
+}
+
+/*PARTE ORLANDO TODO*/
+
+/*Para el login cliente*/
+#ventanaLoginC{     
+    background-image: linear-gradient(to right, #0cf0b37a 0%, #f0780098 100%), url("../Recursos/toro\ login.jpg");
+    width: 30%;
+    color: rgba(255, 255, 255, 1);
+    font-size: 18px;
+    text-align: center;
+    padding: 29px;
+    min-height: 450px;
+    border-radius: 22px;
+    position: absolute;
+    left: 33%;
+    top: 14%;
+    border: solid 1.5px;
+    display: none;
+    box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.493);
+}
+
+/*Para el login abogado*/
+#ventanaLoginA{
+    background-image: linear-gradient(to right, #6b11cb96 0%, #2574fc9c 100%), url("../Recursos/fondo2.jpeg");
+    width: 30%;
+    color: rgba(255, 255, 255, 1);
+    font-size: 18px;
+    text-align: center;
+    padding: 29px;
+    min-height: 450px;
+    border-radius: 22px;
+    position: absolute;
+    left: 33%;
+    top: 14%;
+    border: solid black 1.5px;
+    display: none;
+    box-shadow: 0 0 10px 10px rgba(2, 2, 2, 0.493);
+}
+
+/*Para los login en general*/
+#cerrarLogin img{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 7%;
+}
+
+#ventanaLoginC h1, #ventanaLoginA h1{
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.contenedor_login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor_login #UsuarioCliente, .contenedor_login #ContraCliente{
+    width: 350px;
+    height: 47px;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: solid;
+}
+
+.contenedor_login .BtnIngresar{
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    background: #555;
+    padding: 15px 90px;
+    margin-top: 30px;
+}
+
+.contenedor_login .BtnIngresar:hover{
+    background: rgb(61, 61, 61);
+}
+
+.contenedor_login .BtnOlvido{
+    margin: 35px 0 20px 119px;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+}
+
+.contenedor_login .BtnCuenta{
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+}
+
+.contenedor_login a{
+    text-decoration: none;
+}
+
+.contenedor_login .BtnRegistrar{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    background: #555;
+    padding: 15px;
+}
+
+.contenedor_login .BtnRegistrar:hover{
+    background: rgb(61, 61, 61);
+}
+
+@media screen and (max-width: 500px){
+
+    #ventanaLoginC{     
+        width: 80%;
+        height: 70%;
+        margin: 0 auto;
+        font-size: 15px;
+        text-align: center;
+        padding: 20px;
+        max-width: 300px;
+        left: 30px;
+    }
+
+    #ventanaLoginA{     
+        width: 80%;
+        height: 70%;
+        margin: 0 auto;
+        font-size: 15px;
+        text-align: center;
+        padding: 20px;
+        max-width: 300px;
+        left: 30px;
+    }
+
+    .contenedor_login input{
+        width: 199px;
+        height: 47px;
+        text-align: center;
+        font-size: 15px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        border: 2px solid;
+    }
+
+    .contenedor_login .BtnIngresar{
+
+        font-size: 22px;
+        font-weight: 700;
+        padding: 10px 39px;
+        border-radius: 7px;
+        margin-top: 12px;
+    }
+
+    .contenedor_login .BtnOlvido{
+        margin: 35px 0 10px 119px;
+        font-weight: 700;
+        font-size: 16px;
+
+    }
+
+    .contenedor_login .BtnRegistrar{
+
+        font-weight: 700;
+        font-size: 16px;
+        background: #555;
+        padding: 15px;
+        border-radius: 7px;
+    }
+}
+
+/*Para los input del login cliente*/
+#UsuarioCliente{
+    border-color: black;
+}
+#ContraCliente{
+    border-color: black;
+}
+
+/*Para los input del login abogado*/
+#UsuarioAbogado{
+    border-color: black;
+}
+#ContraAbogado{
+    border-color: black;
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PROYECTO BD</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/Logins.css">
+        <link rel="stylesheet" href="css/RegistroSesion.css">
+    </head>
+    <body>
+        <header class="header_enfocado hero" id="header_enfocado">
+            <div class="container">
+                <div class="menu">
+                    <nav>
+                        <ul class="lista">
+                            <li>
+                                <a href="#">Iniciar Sesion</a> 
+                                <div class="sesiones">
+                                    <a href="#" id="btnLogC" onclick="AbrirUsuario();">Usuario</a>
+                                </div>
+                            </li>
+                            <li> 
+                                <a href="#asesorcorp" id="btn1">Amigos de la Fiesta</a>
+                            </li>
+                            <li> 
+                                <a href="contactanos.html" id="btn2">Contactanos</a>
+                            </li>
+                            <li>
+                                <a href="#nosotros" id="btn3">Nosotros</a>
+                            </li>
+                            <li> 
+                                <a href="#nuestro_equipo" id="btn4">Nuestro Equipo</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <section class="hero__container">
+                    <div class="hero__texts">
+                        <h1 class="hero__title">
+                            Amigos de la Fiesta
+                        </h1>
+                        <h2h class="hero__subtitle">Los mejores en el Pais</h2>
+                            <a href="#" class="hero__cta" id="Unete">Para más información.</a>
+                    </div>
+                </section>
+
+            </div>
+
+            <div class="hero__wave" style="overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                    style="height: 100%; width: 100%;">
+                    <path d="M0.00,49.98 C150.00,150.00 351.74,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                        style="stroke: none; fill: #fff;"></path>
+                </svg></div>
+        </header>
+
+
+    <!--Para el login-->
+        <div id="ventanaLoginC">
+            <div id="cerrarLogin">
+                <a href="#" id="CerrarLoginC" onclick="cerrarVentana();">
+                    <img src="iconos/cerrar.png" title="Cerrar" />
+                </a>
+            </div>
+            <h1>LOGIN</h1>
+            <form id="LogClient" action="php/ControladorLogin.php" method="post">
+                <div class="contenedor_login" id="contenedor_loginC">
+                    <input type="text" name="Usuario" id="UsuarioCliente" placeholder="Ingrese su Usuario" />
+                    <input type="password" name="Contraseña" id="ContraCliente" placeholder="Ingrese su Contraseña" />
+                    <input type="submit" name="InicioSesion" class="BtnIngresar" id="IngresarC" value="INICIAR SESIÓN" style="cursor: pointer;"/>
+                    <a href="RegistroCambioContraseña.php" name="OlvidoContra" class="BtnOlvido" id="OlvidoC">¿Olvidó su contraseña?</a>
+                    <a href="RegistroUsuario.php" name="CuentaNueva" class="BtnCuenta" id="CuentaN" >¿No posee un usuario y contraseña?</a>
+                </div> 
+            </form>
+        </div>
+
+        <main>
+            <section class="presentation container" id="asesorcorp">
+
+                <img src="Recursos/asesorcorp.png" alt="" class="presentation__picture">
+
+                <h2 class="subtitle">QUIENES SOMOS</h2>
+
+                <p class="presentation__copy">Principalmente lo que se pretende es dar un servicio de asesoría jurídica en línea
+                    para las personas que lo necesiten, así poder esclarecer o solucionar sus problemas legales. 
+                    Damos una nueva fuente de trabajo para los abogados que deseen registrarse en nuestra página. </br></br>
+
+                    Aprovechando la evolución de la tecnología y que las actividades se están digitalizando podemos 
+                    ingresar en nuestro país una nueva herramienta, en la cual los beneficiados seran las persona 
+                    que necesite un abogado o asesoría de urgencia en cualquier parte de nuestro país, los abogados 
+                    que deseen utilizar nuestra plataforma solo deberán hacer un pago mensual.
+                    </p>
+
+                <a href="contactanos.html" class="presentation__cta">Contacta con nosotros</a>
+
+            </section>
+            <section class="about container" id="nosotros">
+
+                <div class="about__texts" id="mision">
+
+                    <h2 class="subtitle">MISION</h2>
+
+                    <p class="about__paragraph">En toreros de la casa somos apasionados de la fiesta brava, con la idea clara de proyectarla en una nueva dimensión, que involucre a todos los aficionados de forma muy especial, al protagonismo de cada ciudad y pueblo en donde se ofrecen festejos por tradición.</p>
+                </div>
+
+                <figure class="about__img">
+                    <img src="Recursos/abogado3.jpg" alt="" class="about__picture">
+                </figure>
+                <figure class="about__img about__img--left">
+                    <img src="Recursos/ley2.jpg" alt="" class="about__picture">
+                </figure>
+
+                <div class="about__texts" id="vision">
+
+                    <h2 class="subtitle">Vision</h2>
+
+                    <p class="about__paragraph">Ser una empresa reconocida a nivel nacional e innovadora, con el fin de devolverle la integridad al espectáculo se puede promocionar y difundir en el marco de nuestra cultura y a través de ello brindarle un buen ambiente a nuestros clientes</p>
+
+
+                </div>
+            </section>
+
+            <section class="abogados" id="nuestro_equipo">
+                <div class="container">
+                    <h2 class="subtitle subtitle--m">Mejores Toreros de la Temporada</h2>
+                        <div class="abogados__grid">
+
+                            <article class="abogados__item">
+                                <img src="Recursos/abogado1.jpg" alt="" class="abogado__img">
+                                <div class="abogado__hover">
+                                    <h2 class="abogado__title">Jorge Reyes
+                                    </h2>
+                                    <i class="far fa-file-alt abogados__icon"> </i>
+                                </div>
+                            </article>
+
+                            <article class="abogados__item">
+                                <img src="Recursos/abogado4.jpg" alt="" class="abogado__img">
+                                <div class="abogado__hover">
+                                    <h2 class="abogado__title">Manolo Venegas
+                                    </h2>
+                                    <i class="far fa-file-alt abogados__icon"> </i>
+                                </div>
+                            </article>
+
+                            <article class="abogados__item">
+                                <img src="Recursos/abogado6.jpg" alt="" class="abogado__img abogado__img--top" >
+                                <div class="abogado__hover">
+                                    <h2 class="abogado__title">Antonio Ferrera
+                                    </h2>
+                                    <i class="far fa-file-alt abogados__icon"> </i>
+                                </div>
+                            </article>
+
+                        </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <div class="container footer__grid">
+                <nav class="nav--footer">
+                    <a class="nav__items nav__items--footer" href="#">Inicio</a>
+                    <a class="nav__items nav__items--footer" href="#nosotros">Nosotros</a>
+                    <a class="nav__items nav__items--footer" href="contactanos.html">Contactanos</a>
+                </nav>
+
+                <section class="footer__contact">
+                    <a class="nav__items nav__items--footer" href="#">© 2021 - Todos los derechos reservados</a>
+                </section>
+            </div>
+        </footer>
+
+        <!--Script del index-->
+        <script src="js/index.js"></script>
+
+        <!--Script de la validacion del login-->
+        <script src="js/Logins.js"></script>
+
+    </body>
+
+</html>

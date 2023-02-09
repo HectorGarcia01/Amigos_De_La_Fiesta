@@ -1,0 +1,206 @@
+/*PARTE ORLANDO*/
+
+
+/*Para centrar ambos registros*/
+#registro{
+    display: flex;
+    justify-content: center;
+}
+
+/*Para el principal registro*/
+#contenedorRegistro{
+    padding-top: 30px;
+    background-image: radial-gradient(circle at 77.19% 11.17%, #c21be2 0, #9014c8 16.67%, #5a09a9 33.33%, #1a0084 50%, #00005f 66.67%, #00003f 83.33%, #000025 100%);
+    width: 350px;
+    height: 320px;
+    text-align: center;
+    position: absolute;
+    left: 35.5%;
+    top: 23%;
+    color: white;
+    border: solid white 1px;
+    display: none;
+    border-radius: 8px;
+    box-shadow: 0 0 9999px 9999px rgba(22, 22, 22, 0.493);  /*PARA DARLE SOMBRA  XD*/
+}
+
+#contenedorRegistro a{
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#contenedorRegistro .boton_cliente{
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+#contenedorRegistro .boton_cliente a{
+    background-color: skyblue;
+    padding: 10px;
+}
+
+#contenedorRegistro .boton_cliente a:hover{
+    background-color: rgb(37, 122, 156);
+    color: white;
+    padding: 20px;
+    border: solid;
+}
+
+#contenedorRegistro .boton_abogado a{
+    background-color: rgb(211, 12, 12);
+    padding: 10px;
+}
+
+#contenedorRegistro .boton_abogado a:hover{
+    background-color: rgb(253, 2, 2);
+    color: white;
+    padding: 20px;
+    border: solid;
+}
+
+/*Para el registro cliente y abogado*/
+#contendorRegistro_Cliente{/*Solo cliente*/
+    background-color: skyblue;
+    width: 512px;
+    height: 648px;
+    border: solid gray;
+    left: 31.5%;
+    top: 1%;
+    position: absolute;
+    display: none;
+    box-shadow: 0 0 9999px 9999px rgba(22, 22, 22, 0.493);
+}
+
+#contendorRegistro_Abogado{/*Solo Abogado*/
+    background-color: skyblue;
+    width: 512px;
+    height: 648px;
+    border: solid gray;
+    left: 31.5%;
+    top: 1%;
+    position: absolute;
+    display: none;
+    box-shadow: 0 0 9999px 9999px rgba(22, 22, 22, 0.493);
+}
+
+.titulo_registro h1{
+    margin: 0;
+}
+
+.titulo_registro{
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+section{
+    margin-top: 10px;
+    margin-left: 45px;
+}
+
+#Seccion1 p{
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+#Seccion1 input{
+    width: 200px;
+    height: 22px;
+}
+
+#Seccion2 p{
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+#Seccion2 input{
+    width: 300px;
+    height: 22px;
+}
+
+#Seccion2 select{
+    width: 120px;
+    height: 28px;
+}
+
+#Seccion2 #Cuenta_client, #Seccion2 #Cuenta_Abog{
+    width: 280px;
+}
+
+#Seccion3{
+    margin-top: 25px;
+}
+
+#Seccion3 p{
+    margin-top: 25px;
+}
+
+#Seccion3 #btn_CrearCuenta{
+    text-decoration: none;
+    background-color: gray;
+    color: white;
+    padding: 7px;
+    margin-left: 316px;
+}
+
+#Seccion3 #btn_CrearCuenta:hover{
+    background-color: rgb(61, 58, 58);
+}
+
+/*Solo para el registro cliente*/
+#Seccion2 #Contra_client, #Seccion2 #Contra_client_rep{
+    width: 405px;
+}
+
+#Nom_client{
+    border-color: black;
+}
+#Ape_client{
+    border-color: black;
+}
+#Fecha_client{
+    border-color: black;
+}
+#Sexo_client{
+    border-color: black;
+}
+#Cuenta_client{
+    border-color: black;
+}
+#Contra_client{
+    border-color: black;
+}
+#Contra_client_rep{
+    border-color: black;
+}
+
+/*Solo para el registro cliente*/
+#Seccion2 #Contra_Abog, #Seccion2 #Contra_Abog_rep{
+    width: 405px;
+}
+
+#Nom_Abog{
+    border-color: black;
+}
+#Ape_Abog{
+    border-color: black;
+}
+#Fecha_Abog{
+    border-color: black;
+}
+#Sexo_Abog{
+    border-color: black;
+}
+#Cuenta_Abog{
+    border-color: black;
+}
+#Contra_Abog{
+    border-color: black;
+}
+#Contra_Abog_rep{
+    border-color: black;
+}

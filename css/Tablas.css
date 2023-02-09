@@ -1,0 +1,77 @@
+html,
+body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    background: linear-gradient(45deg, #F07900, #0CF0B398);
+    font-family: sans-serif;
+    font-weight: 100;
+}
+.titulos{
+    text-align: center; 
+    font-family: Arial Black; 
+    font-weight: bold; 
+    font-size: 20px; 
+    margin-bottom: 10px;
+
+    color: #fff; 
+    text-shadow: 0 1px 0 #ddd, 0 2px 0 #ccc, 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 0 #acacac, 0 6px 1px rgba(0,0,0,0.1), 0 0 5px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.3), 0 3px 5px rgba(0,0,0,0.2), 0 5px 10px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.2), 0 20px 20px rgba(0,0,0,0.15);
+} 
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+table {
+    border-collapse: collapse;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+th,
+td {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+th {
+    text-align: left;
+}
+thead th {
+    background-color: #55608f;
+}
+tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+tbody td {
+    position: relative;
+}
+tbody td:hover:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -9999px;
+    bottom: -9999px;
+    background-color: rgba(255, 255, 255, 0.2);
+    z-index: -1;
+}
+
+.button{
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 12px 28px;
+    border: 1px solid #d11e1e;
+    border-radius: 21px;
+    background: #ff4a4a;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff4a4a), to(#cf0029));
+    background: -moz-linear-gradient(top, #ff4a4a, #cf0029);
+    background: linear-gradient(to bottom, #ff4a4a, #cf0029);
+    text-shadow: #591717 1px 3px 1px;
+    font: normal normal bold 19px arial;
+    color: #ffffff;
+    text-decoration: none;
+    margin-bottom: -264px;
+    margin-left: 657px;
+}

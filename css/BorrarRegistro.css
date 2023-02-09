@@ -1,0 +1,40 @@
+.contenedorBorrar{
+    display: flex;
+    justify-content: center;
+}
+
+.contenedorBorrar h1{
+    font-size: 40px;
+    margin-bottom: 60px;
+    margin-top: -20px;
+}
+
+.contenedorBorrar span{
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+}
+
+.contenedorBorrar .DPI_Borrar{
+    width: 350px;
+    height: 30px;
+    border-radius: 9px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.contenedorBorrar .btnBorrarRegistro{
+    text-align: center;
+    vertical-align: middle;
+    padding: 12px 28px;
+    border: 1px solid #d11e1e;
+    border-radius: 21px;
+    background: #ff4a4a;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff4a4a), to(#cf0029));
+    background: -moz-linear-gradient(top, #ff4a4a, #cf0029);
+    background: linear-gradient(to bottom, #ff4a4a, #cf0029);
+    text-shadow: #591717 1px 3px 1px;
+    font: normal normal bold 19px arial;
+    color: #ffffff;
+    cursor: pointer;
+}

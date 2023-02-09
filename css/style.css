@@ -1,0 +1,615 @@
+
+/*PARTE INICIO CHARLY*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+
+:root{
+    --backgroung: linear-gradient(135deg, #F07900 0%, #0CF0B398 100%);
+    --color-primary: #A3182B;
+    --color-secondary: #F07900;
+    --boton-padding: 20px 40px;
+}
+
+
+body{
+    font-family: 'Raleway', sans-serif;   
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto; 
+    overflow:hidden; 
+    padding: 80px 0; 
+    max-width: 1200px;      
+}
+
+
+.subtitle{
+    color: var(--color-primary);
+    font-size: 2.5rem;
+    margin-bottom: 35px;
+}
+
+#header_enfocado{
+    height: 100vh;
+    background-image: var(--backgroung), url("../Recursos/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position:relative;
+    display: block;
+}
+
+.hero .container{
+    padding: 0;
+}
+
+li{
+    list-style: none;
+    margin-right: 22px;
+}
+
+.transision{
+    transition: transform .3s ease-in-out;
+}
+
+.menu{
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    height: 70px;
+    font-weight: 700;
+}
+
+.sesiones{
+    position: absolute;
+    overflow: hidden;
+    display: none;
+}
+
+li:hover .sesiones{
+    display: block;
+}
+
+.lista{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    overflow: hidden;
+}
+
+.lista a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+    padding: 10px 20px;
+}
+
+.lista a:hover{
+    border: 1px solid #fff;
+}
+
+.sesiones a:hover{
+    color: #666;
+    padding: 10px 30px;
+    text-align: center;
+}
+
+.nav--footer{
+    font-weight: 300;
+    text-align: center;
+
+}
+
+.nav__items--m{
+    color: #666;
+}
+
+
+
+.nav__items--footer{
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    text-align:center;
+}
+
+.hero__container{
+    display: flex;
+    height: calc(100vh - 70px);
+    align-items: center;
+    color: #fff;
+}
+
+.hero__texts{
+    width: 600px;
+    margin-bottom: 150px;
+}
+
+.hero__title{
+    font-size:3.2rem;
+}
+
+.hero__subtitle{
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 15px 0px;
+}
+
+.hero__cta{
+    margin-top: 50px;
+    font-size:1.5rem; 
+    display: inline-block;
+    background-color: #fff;
+    padding: var(--boton-padding);
+    color: var(--color-primary);
+    text-decoration: none;
+    border-radius: 40px;
+}
+
+.hero__wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+
+}
+
+
+/*PARTE DEL ABOUT*/
+
+.presentation{
+    padding: 70px;
+    text-align: center;
+}
+
+.presentation__picture{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.presentation__copy{
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+
+}
+
+.presentation__cta{
+    display: inline-block;
+    margin-top: 30px;
+    background-color: var(--color-primary);
+    color: #fff;
+    text-decoration: none;
+    padding: var(--boton-padding);   
+    border-radius: 40px;
+}
+
+.about{
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 80px;
+    justify-items: center;
+    align-items: center;
+}
+
+.about__img{
+    text-align: center;
+}
+
+.about__img--left{
+    text-align: left;
+}
+
+.about__picture{
+    max-width: 80%;
+}
+
+.about__paragraph{
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-weight: 300;
+    text-align: justify;
+}
+
+/*SECCION DE ABOGADOS*/
+
+.abogados{
+    background: #f2f2f2;
+    margin-left: 0px;
+}
+
+.abogados__grid{
+    display: grid;
+    height: 300px;  
+    grid-template-areas: 
+    "abogado6 abogado2 abogado4"
+    "abogado6 abogado2 abogado4";
+    gap: 10px;
+
+}
+
+.abogados__item{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.abogado__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+
+}
+
+.abogado__img--top{
+    object-position: top;
+}
+
+.abogados__item:nth-of-type(1){
+    grid-area: abogado6;
+}
+.abogados__item:nth-of-type(2){
+    grid-area: abogado2;
+}
+.abogados__item:nth-of-type(3){
+    grid-area: abogado4;
+}
+.abogados__item:nth-of-type(4){
+    grid-area: abogado5;
+}
+.abogados__item:nth-of-type(5){
+    grid-area: abogado1;
+}
+
+.abogado__hover{
+    position: absolute;
+    background: #dc143c8c;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    transform: translateX(100%);
+    cursor: pointer;
+    transition: transform .3s ease-in-out;
+}
+
+.abogados__item:hover .abogado__hover{
+    transform: translateX(0%);
+}
+
+.abogados__icon{
+    margin-top: 10px;
+    font-size: 30px;
+}
+/*PARTE FINAL YO*/
+
+
+/*PARTE INICIO JOSUE*/
+/*COMENTARIOS DE PERSONAS*/
+
+.testimonio__grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.testimonio__item{
+    width: 95%;
+    margin: 0 auto;
+    background: var(--color-secondary);
+    box-shadow: 0 8px 10px rgba(66,66,66, .5);
+    border-radius: 7px;
+    padding: 30px 25px;
+    color: #fff;
+    margin-bottom: 50px;
+
+}
+
+.testimonio__persona{
+    display:flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.testimonio__img{
+    width:100px;
+    min-width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin-right: 30px
+}
+
+.testimonio__nombre{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.testimonio__verificacion{
+    color: #E0AFA0;
+    font-weight: 700;
+}
+
+.testimonio_reseña{
+    font-weight: 300;
+    text-align: justify;
+}
+
+/*FOOTER*/
+
+.footer{
+    background: var(--color-primary);
+}
+
+.footer__grid{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.footer__title{
+    font-weight: 400;
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+.footer__container-icons{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    color: #ffff;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+
+.fab.footer__icon{
+    line-height: 60px;
+}
+
+
+/*PARTE FINAL JOSUE*/
+
+
+/*PARTE INICIO YO*/
+/*Diseño responsibo*/
+
+@media screen and (max-width: 800px){
+    :root{
+        --boton-padding: 18px 40px;
+    }
+
+    /*HEADER*/
+
+    .menu{
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+
+    }
+
+    li:hover .sesiones{
+        display:flex;
+        position: relative;
+    }
+
+    .lista{
+        font-weight: 400;
+        margin-right: 0;
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+
+    .lista a{
+        margin-right: 5px;
+        padding: 10px 5px;
+        justify-content: space-between;
+
+
+    }
+    .nav__items--footer{
+        border: none;
+    }
+
+    .hero__texts{
+        width:100%;
+        margin-bottom: 80px;
+    }
+
+    .hero__title{
+        font-size: 2.5rem;
+    }
+
+    .hero__subtitle{
+        font-size: 1.5rem;
+    }
+
+    /*ABOUT*/
+
+    .presentation__copy{
+        width: 100%;
+    }
+
+    .about{
+        grid-template-columns: 1fr;
+    }
+
+    .about__img--left{
+        text-align: center;
+    }
+
+    .about__texts:last-child{
+        grid-row: 3/4;
+    }
+
+    /*NUESTROS ABOGADOS*/
+
+    .abogados__grid{
+        grid-template-areas:
+        "abogado1 abogado1 abogado2 abogado2"
+        "abogado1 abogado1 abogado4 abogado4"
+        "abogado5 abogado5 abogado6 abogado6" ;
+    }
+
+    /*EXPERIENCIAS*/
+
+    .testimonio__grid{
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+
+    /*FOOTER*/
+
+    .footer__grid{
+        grid-template-columns: 1fr;
+    }
+
+    .footer__contact{
+        grid-row: 1/2;
+    }
+}
+
+@media screen and (max-width: 500px){
+
+    :root{
+        --boton-padding: 18px 35px;
+    }
+
+    .container {
+        padding: 60px 0; 
+    }
+
+    .subtitle{
+        font-size: 2rem;
+        margin-bottom: 20px;
+        margin-top: 60px;
+    }
+
+    .subtitle--m{
+        margin-top: 0 ;
+    }
+
+    .menu{
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+
+    }
+
+    li:hover .sesiones{
+        display:flex;
+        position: relative;
+    }
+
+    .lista{
+        font-weight: 400;
+        margin-right: 0;
+        flex-wrap:wrap;
+                justify-content: center;
+    }
+
+    .lista a{
+        margin-right: 5px;
+        padding: 10px 5px;
+        justify-content: space-between;
+
+
+    }
+
+    .hero__texts{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .hero__title{
+        font-size: 2rem;
+    }
+
+    /*ABOUT*/
+
+    .presentation__picture{
+        width: 120px;
+        height: 120px;
+    }
+
+    .about{
+        row-gap: 60px;
+    }
+
+    .about.container{
+        padding-top: 10px;
+    }
+
+    /*Abogados*/
+
+    .abogados__grid{
+        grid-template-areas: 
+        "abogado1"
+        "abogado2"
+        "abogado4"
+        "abogado5"
+        "abogado6";
+        height: auto;
+        grid-template-rows: repeat(5,250px);
+        grid-auto-rows: 250px;
+        gap: 10px;
+    }
+
+    /*RESEÑAS*/
+
+    .testimonio__item{
+        padding: 30px 15px;
+    }
+
+    .testimonio__persona{
+        flex-direction: column;
+    }
+
+    .testimonio__text{
+        text-align: center;
+    }
+
+    .testimonio__img{
+        margin:0;
+        margin-bottom: 20px;
+    }
+
+        /*FOOTER*/
+
+        .footer__grid{
+            grid-template-columns: 1fr;
+        }
+    
+        .footer__contact{
+            grid-row: 1/2;
+        }
+}

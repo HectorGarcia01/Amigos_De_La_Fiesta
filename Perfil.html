@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>PERFIL PERSONAL</title>
+        <link rel="stylesheet" href="css/perfil.css">
+    </head>
+    <body>
+        <div class=fondoimg>
+            <div class="separador">
+                <div class="perfil">
+                    <img src="Recursos/administrador.jpg">
+                    <div class="perfil_texto">
+                        <h2 id="nombreUsuario">Joaquín Medrano</h2>
+                        <h3 id="apellidoUsuario">Recursos Humanos</h3>
+                        <p id="tipoUsuario">Administrador de la Base de Datos</p>
+                    </div>
+            </div>
+            <div class="botones">
+                <a class="button" href="RegistroFiestas.php">Registrar Fiestas</a>
+                <a class="button" href="RegistroToros.php">Registrar Toros</a>
+                <a class="button" href="RegistroPadrino.php">Registrar Toreros</a>
+                <a class="button" id="btnNodal" href="#">Opciones Avanzadas</a>
+                <a class="button" href="index.html">Salir</a>
+            </div>  
+        </div>
+        <div id="ventana_nodal">
+            <div class="ventana_botones">
+                <a href="AdministrarUsuarios.html" id="btnAU" class="button">ADMINISTRAR USUARIOS</a>
+                <a href="VerRegistros.html" id="btnVer" class="button">VER REGISTRO</a>
+                <a href="BorrarRegistros.html" id="btnVer" class="button">BORRAR REGISTRO</a>
+                <a href="/AMIGOS-DE-LA-FIESTA/php/ControladorBackupRegistros.php" id="btnVer" class="button">CREAR BACKUP</a>
+            </div>
+            <div class="triangulo"></div>
+        </div>
+        <script src="js/Perfil.js"></script>
+    </body>
+</html>

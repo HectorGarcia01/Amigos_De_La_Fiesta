@@ -1,0 +1,54 @@
+**************************************************************************************************************************
+Para poder ejecutar nuestro proyecto es necesario que siga los siguientes pasos:
+
+1. Debe de instalar XAMPP
+
+2. Una vez instalado XAMPP debe de dirigirse a la carpeta XAMPP que está ubicada en el disco
+local C, luego dirigirse a la carpeta htdocs.
+
+3. Ahora que ya está dentro de la carpeta htdocs mueva la carpeta del proyecto llamada AMIGOS-DE-LA-FIESTA 
+a esa carpeta. C:\xampp\htdocs
+
+4. Ahora lo que procede es abrir el panel de control de XAMPP e iniciar el Apache y MySQL o sea dar clic en e botón
+start de Apache y MySQL.
+
+5. Por ultimo abra el navegador de su preferencia e inserte la siguiente dirección: 
+http://localhost/AMIGOS-DE-LA-FIESTA/index.html
+***************************************************************************************************************************
+
+NOTA: 
+BACKUP EN CALIENTE DESDE CMD:
+
+Si quieres crear un backup en caliente primero entra al cmd y copia lo siguiente:
+
+1. cd..         					
+(esto servirá para salir de la ruta actual, el "cd.." se hará hasta que llegue al disco local C "C:\")
+
+2. cd xampp/htdocs/AMIGOS-DE-LA-FIESTA 			
+(esto será para entrar a la carpeta del proyecto)
+
+3. mkdir Backup_Caliente 				
+(esto comando creará la carpeta llamada "Backup_Caliente")
+
+4. cd..							
+(para salirse de la carpeta del proyecto)
+
+5. cd..							
+(para salirse de la carpeta htdocs)
+
+6. cd mysql/bin						
+(para entrar a la carpeta bin de mysql)
+
+7. mysqldump -u root -p ProyectoFinalBD1 > C:\xampp\htdocs\AMIGOS-DE-LA-FIESTA\Backup_Caliente\Backup_Caliente_Proyecto.sql
+(mysqldump sirve para acceder a la base de datos y crear el backup en caliente,
+-u root es del usuario de la base de datos,
+-p para la contraseña pero como no hay solo se deja así,
+ProyectoFinalDB1 es el nombre de la base de datos,
+> para indicar la ruta en donde estará el backup en caliente,
+...\Backup_Caliente es el nombre de la carpeta a guardar el backup en caliente,
+...\Backup_Caliente_Proyecto.sql es el nombre del backup en caliente, siempre lleva la extension sql para indicar que es BD)
+
+
+8. cuando le aparezca password: solo dele un enter ya que no hay contraseña.
+
+
